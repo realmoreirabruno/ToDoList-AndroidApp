@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="edit_text_task_name">Nome da Tarefa</string>
+    <string name="text_view_date_created">Data de Criação</string>
+    <string name="tasksFragment">Tarefas</string>
+</resources>

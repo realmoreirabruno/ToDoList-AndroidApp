@@ -7,11 +7,12 @@
     android:background="@android:color/white">
 
     <TextView
+        android:id="@+id/empty_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Empty"
+        android:text="Empty! Add a task"
         android:textColor="#FF4500" />
 
     <androidx.recyclerview.widget.RecyclerView

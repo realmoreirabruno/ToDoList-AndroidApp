@@ -4,4 +4,7 @@
     <string name="edit_text_task_name">Nome da Tarefa</string>
     <string name="text_view_date_created">Data de Criação</string>
     <string name="tasksFragment">Tarefas</string>
+    <string name="empty_view">Vazio! Adicione uma Tarefa</string>
+    <string name="description_task">Descrição (opcional)</string>
+    <string name="textViewDateCreated.text">Criado</string>
 </resources>

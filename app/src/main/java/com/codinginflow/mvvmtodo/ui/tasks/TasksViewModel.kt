@@ -61,6 +61,10 @@ class TasksViewModel @ViewModelInject constructor(
         tasksEventChannel.send(TasksEvent.ShowUndoDeleteTaskMessage(task))
     }
 
+    /*fun onTaskLongPress(task: Task) = viewModelScope.launch {
+        tasksEventChannel.send(TasksEvent.NavigateToDeleteAllCompletedScreen)
+    }*/
+
     fun onUndoDeleteClick(task: Task) = viewModelScope.launch {
         //back to database as nothing happened
         taskDao.insert(task)
@@ -82,9 +86,9 @@ class TasksViewModel @ViewModelInject constructor(
         tasksEventChannel.send(TasksEvent.ShowTaskConfirmationMessage(text))
     }
 
-    fun onDeleteAllCompletedClick() = viewModelScope.launch {
+    /*fun onDeleteAllCompletedClick() = viewModelScope.launch {
         tasksEventChannel.send(TasksEvent.NavigateToDeleteAllCompletedScreen)
-    }
+    }*/
 
     sealed class TasksEvent {
         object NavigateToAddTaskScreen : TasksEvent()

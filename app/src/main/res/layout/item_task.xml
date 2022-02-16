@@ -19,20 +19,20 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/check_box_completed"
         android:layout_alignBottom="@id/check_box_completed"
-        android:layout_toStartOf="@+id/label_priority"
         android:layout_toEndOf="@id/check_box_completed"
         android:ellipsize="end"
         android:gravity="center_vertical"
         android:maxLines="1"
         android:textColor="@color/black"
-        tools:text="Example item" />
+        tools:text="Example item"
+        android:longClickable="true" />
 
-    <ImageView
+    <!--<ImageView
         android:id="@+id/label_priority"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:src="@drawable/ic_priority" />
-
+     -->
 </RelativeLayout>

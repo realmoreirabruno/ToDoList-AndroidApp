@@ -79,21 +79,13 @@ class TasksFragment : Fragment(R.layout.fragment_tasks), TasksAdapter.OnItemClic
             viewModel.onAddEditResult(result)
         }
 
-        viewModel.tasks.observe(viewLifecycleOwner) { taskList ->
-            taskAdapter.submitList(taskList)
+        viewModel.tasks.observe(viewLifecycleOwner) {
+            taskAdapter.submitList(it)
         }
 
-        //empty message
 
-        /*if (taskList.isNullOrEmpty()) {
-            empty_view_tasks.visibility = View.VISIBLE
-            recycler_view_tasks.visibility = View.GONE
-        }
-        else {
-            empty_view_tasks.visibility = View.GONE
-            recycler_view_tasks.visibility = View.VISIBLE
-        }
-
+        //second try
+        /*
         val lv: RecyclerView = taskList(android.R.id.list) as RecyclerView
         val emptyText = taskList(android.R.id.empty) as TextView
         lv.setEmptyView(emptyText)
@@ -137,6 +129,15 @@ class TasksFragment : Fragment(R.layout.fragment_tasks), TasksAdapter.OnItemClic
     override fun onCheckBoxClick(task: Task, isChecked: Boolean) {
         viewModel.onTaskCheckedChanged(task, isChecked)
     }
+
+    /*override fun View.OnLongClickListener
+
+
+    override fun onLongPress(task: Task){
+        viewModel.onTaskLongPress(task)
+    }
+
+     */
 
     //useless features
     /*

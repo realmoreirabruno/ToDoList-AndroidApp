@@ -3,4 +3,7 @@
     <string name="edit_text_task_name">Task Name</string>
     <string name="text_view_date_created">Date Created</string>
     <string name="tasksFragment">Tasks</string>
+    <string name="empty_view">Tasks</string>
+    <string name="description_task">Description (optional)</string>
+    <string name="textViewDateCreated.text">Created</string>
 </resources>
